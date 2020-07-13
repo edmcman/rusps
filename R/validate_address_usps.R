@@ -9,7 +9,7 @@ validate_address_usps <- function(street, city, state, username) {
   
   all_addresses <- data.frame()
   
-  scheme_host_path <- paste0("http://production.shippingapis.com/ShippingAPITest.dll?API=ZipCodeLookup&XML=<ZipCodeLookupRequest USERID=\"")
+  scheme_host_path <- paste0("https://secure.shippingapis.com/ShippingAPITest.dll?API=ZipCodeLookup&XML=<ZipCodeLookupRequest USERID=\"")
   
   host_with_start_tag <- paste0(scheme_host_path, username, "\">")
   
